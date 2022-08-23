@@ -1,16 +1,16 @@
 name: Build Docker image and deploy to Heroku
-  on:
-  # Trigger the workflow on push or pull request,
-  # but only for the main branch
-  push:
-    branches:
-      - master
-  jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v1
-        - name: Login to Heroku Container registry
+on:
+# Trigger the workflow on push or pull request,
+# but only for the main branch
+push:
+branches:
+- master
+jobs:
+build:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v1
+- name: Login to Heroku Container registry
 env:
 HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
 run: heroku container:login
