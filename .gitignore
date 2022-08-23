@@ -1,0 +1,4 @@
+# ignore juptyter notebook check points
+.ipynb_checkpoints
+
+tmp/
