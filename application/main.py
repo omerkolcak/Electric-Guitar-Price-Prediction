@@ -112,8 +112,8 @@ switch = st.sidebar.selectbox("Switch",switch_options)
 knobs_options = ('Bell', 'Dome', 'Speed')
 knobs = st.sidebar.selectbox("Knobs",knobs_options)
 
-volume_controls = st.sidebar.slider("Volume Controls",0,3,(1,2))
-tone_controls = st.sidebar.slider("Tone Controls",0,3,(1,2))
+volume_controls = st.sidebar.slider("Volume Controls",min_value=0,max_value=3,step=1)
+tone_controls = st.sidebar.slider("Tone Controls",min_value=0,max_value=3,step=1)
 
 pickup_configurations_options = ('H', 'HH', 'HHH', 'HHS', 'HHX', 'HP90', 'HP90P90', 'HS', 'HSH', 'HSS',
        'P90', 'P90P90', 'P90P90P90', 'SH', 'SP90', 'SS', 'SSH', 'SSS', 'XXH')
