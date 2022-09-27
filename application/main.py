@@ -177,7 +177,10 @@ if make_prediction:
     predicators = np.array(predicators).reshape(1,-1)
     predicted_price = predict(model,predicators)
 
-    st.write(f"Guitar price is predicted as {predicted_price}$")
+    min_value = 100 * predicted_price / 114
+    max_value = 100 * predicted_price / 86
+
+    st.write(":guitar: Guitar price is predicted as in the range of",min_value,"$ -",max_value,"$ :guitar:")
 
 
 
