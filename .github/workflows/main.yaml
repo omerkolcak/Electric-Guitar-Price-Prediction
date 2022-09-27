@@ -3,8 +3,8 @@ name: Build and Deploy Streamlit app on Heroku
 on:
   push:
     branches: 
-	- main
-	- 'application/*'
+      - main
+      - 'application/*'
   pull_request:
     branches: [ main ]
     
