@@ -179,8 +179,9 @@ if make_prediction:
 
     min_value = 100 * predicted_price / 114
     max_value = 100 * predicted_price / 86
-
-    st.write(":guitar: Guitar price is predicted as in the range of",min_value,"$ -",max_value,"$ :guitar:")
+    
+    prediction_result = ":guitar: Guitar price is predicted as in the range of " + str(min_value) + "$ - " + str(max_value) + "$ :guitar:"
+    st.write(prediction_result)
 
 
 
