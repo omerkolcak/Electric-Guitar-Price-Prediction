@@ -28,20 +28,19 @@ st.title("Guitar Price Prediction")
 
 st.image(homepage_img)
 
-brand_options = ('Charvel', 'Cort', 'Dean', 'ESP LTD', 'Epiphone', 'Fender',
-       'Fender Squier', 'Gibson', 'Gretsch', 'Harley Benton', 'Ibanez',
-       'Jackson', 'Kramer', 'Music Man', 'PRS', 'Reverend', 'Schecter', 'Sire',
-       'Solar', 'Sterling', 'Washburn', 'Yamaha')
+brand_options = ('Charvel', 'Cort', 'Dean', 'ESP', 'ESP E-II', 'ESP LTD', 'Epiphone',
+       'Fender', 'Fender Squier', 'Gibson', 'Gretsch', 'Harley Benton',
+       'Ibanez', 'Jackson', 'Kramer', 'Music Man', 'PRS', 'Reverend',
+       'Schecter', 'Sire', 'Solar', 'Sterling', 'Washburn', 'Yamaha')
 brand = st.sidebar.selectbox("Brand",brand_options)
 
 year_options = ('1990s', '2000s', '2010', '2011', '2012', '2013', '2014','2015', '2016', '2017', '2018', '2019', '2020', '2021','2022')
 year = st.sidebar.selectbox("Year",year_options)
 
-made_in_options = ('China', 'India', 'Indonesia', 'Japan', 'Mexico', 'South Korea',
-       'United States', 'Vietnam')
+made_in_options = ('China', 'India', 'Indonesia', 'Japan', 'Mexico', 'South Korea','United States', 'Vietnam')
 made_in = st.sidebar.selectbox("Made In",made_in_options)
 
-number_of_strings_options = ('6', '7', '8','9', '12')
+number_of_strings_options = ('12','6', '7', '8','9')
 number_of_strings = st.sidebar.selectbox("Number of Strings",number_of_strings_options)
 
 body_type_options = ('Hollowbody', 'Semi-Hollow', 'Solid Body')
@@ -65,12 +64,11 @@ neck_material = st.sidebar.selectbox("Neck Material", neck_material_options)
 
 neck_profile_options = ('Asymmetrical', 'C', 'D', 'GRGR', 'Nitro Baritone', 'SA', 'Soft V to C',
        'Super Wizard', 'U', 'V', 'Vintage', 'Wizard')
-neck_profile = st.sidebar.selectbox("Neck Profile",neck_profile_options)
+neck_profile = st.sidebar.selectbox("Neck Shape",neck_profile_options)
 
 scale_size_options = ('21.5"', '24"', '24.5"', '24.6"', '24.75"', '25"', '25.5"',
        '26.25" to 25.5"', '26.5"', '26.5" to 25.5"', '26.75"', '27"',
-       '27" to 25.5"', '27.7"', '28"', '28" to 26"', '28.625"', '29.75"',
-       '30"')
+       '27" to 25.5"', '27.7"', '28"', '28" to 26"', '28.625"', '29.75"','30"')
 scale_size = st.sidebar.selectbox("Scale Size",scale_size_options)
 
 frets_options = ('Jumbo', 'Jumbo Evo Gold', 'Medium', 'Medium Jumbo', 'Narrow Tall',
@@ -85,25 +83,27 @@ fretboard_material = st.sidebar.selectbox("Fretboard Material",fretboard_materia
 number_of_frets_options = ('20', '21', '22', '24')
 number_of_frets = st.sidebar.selectbox("Number of Frest",number_of_frets_options)
 
-fretboard_radius_options = ('10"', '10" to 14"', '11.5"', '12"', '12" to 16"', '12.6"', '13.78"',
-       '14"', '15"', '15.748"', '15.75"', '16"', '17"', '20"', '7.25"', '8.5"',
-       '9"', '9.5"', '9.5" to 14"', '9.843"')
+fretboard_radius_options = ('10"', '10" to 14"', '10" to 16"', '11.5"', '12"', '12" to 16"',
+       '12.6"', '13.78"', '14"', '15"', '15.748"', '15.75"', '16"', '17"',
+       '20"', '37"', '7.25"', '8.5"', '9"', '9" to 12"', '9.5"', '9.5" to 12"','9.5" to 14"', '9.843"')
 fretboard_radius = st.sidebar.selectbox("Fretboard Radius",fretboard_radius_options)
 
 stainless_steel_frets_options = ("No","Yes")
 stainless_steel_frets = st.sidebar.selectbox("Stainless Steel Frets",stainless_steel_frets_options)
 
-nut_options = ('Black Tusq XL', 'Bone', 'Boneite', 'Bonoid', 'Compensated', 'Graphite',
-       'Ivory Tusq', 'Locking', 'NuBone', 'PRS Propietary', 'Plastic','Synthetic Bone')
+nut_options = ('Black Tusq XL', 'Bone', 'Boneite', 'Bonoid', 'Brass', 'Compensated',
+       'Delrin', 'Graphite', 'Half-Bone/Half-Brass', 'Ivory Tusq',
+       'LSR Roller', 'Locking', 'NuBone', 'PRS Propietary', 'Plastic','Synthetic Bone')
 nut = st.sidebar.selectbox("Nut",nut_options)
 
 nut_width_options = ('40.5mm (1.594'')', '40mm (1.575'')', '41.3mm (1.625'')',
        '41.7mm (1.643'')', '41.9mm (1.65'')', '41mm (1.614'')',
-       '42.1mm (1.656'')', '42.5mm (1.675'')', '42.7mm (1.68'')',
-       '42.8mm (1.685'')', '42.9mm (1.688'')', '42mm (1.654'')',
-       '43mm (1.693'')', '44.5mm (1.75'')', '45mm (1.77'')',
+       '42.1mm (1.656'')', '42.4mm (1.67'')', '42.5mm (1.675'')',
+       '42.7mm (1.68'')', '42.8mm (1.685'')', '42.9mm (1.688'')',
+       '42mm (1.654'')', '43mm (1.693'')', '44.5mm (1.75'')', '45mm (1.77'')',
        '47.6mm (1.875'')', '47mm (1.85'')', '48mm (1.89'')', '49.5mm (1.95'')',
-        '52.4mm (2.062'')', '54mm (2.126'')', '55mm (2.165'')','63.5mm (2.5'')')
+       '50mm (1.969'')', '52.4mm (2.062'')', '54mm (2.126'')',
+       '55mm (2.165'')', '62mm (2.44'')', '63.5mm (2.5'')')
 nut_width = st.sidebar.selectbox("Nut Width",nut_width_options)
 
 switch_options = ('0 Way', '3 Way', '4 Way', '5 Way')
@@ -112,11 +112,11 @@ switch = st.sidebar.selectbox("Switch",switch_options)
 knobs_options = ('Bell', 'Dome', 'Speed')
 knobs = st.sidebar.selectbox("Knobs",knobs_options)
 
-volume_controls = st.sidebar.slider("Volume Controls",1,3)
-tone_controls = st.sidebar.slider("Tone Controls",0,2)
+volume_controls = st.sidebar.slider("Volume Controls"0,1,2,3)
+tone_controls = st.sidebar.slider("Tone Controls",0,1,2,3)
 
 pickup_configurations_options = ('H', 'HH', 'HHH', 'HHS', 'HHX', 'HP90', 'HP90P90', 'HS', 'HSH', 'HSS',
-       'P90', 'P90P90', 'P90P90P90', 'SH', 'SP90', 'SS', 'SSS', 'XXH')
+       'P90', 'P90P90', 'P90P90P90', 'SH', 'SP90', 'SS', 'SSH', 'SSS', 'XXH')
 pickup_configurations = st.sidebar.selectbox("Pickup Configurations",pickup_configurations_options)
 
 top_pickup_brand_options = ("No","Yes")
