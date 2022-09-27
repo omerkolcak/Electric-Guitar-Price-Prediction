@@ -175,13 +175,10 @@ if make_prediction:
     tone_controls,top_pickup_brand_value,pickups_power_value,locking_tuners_value,bridge_type_value,tremolo_value]
 
     predicators = np.array(predicators).reshape(1,-1)
-    predicted_price = predict(model,predicators)
+    predicted_price = predict(model,predicators)[0]
 
-    min_value = 100 * predicted_price / 114
-    max_value = 100 * predicted_price / 86
-    
-    prediction_result = ":guitar: Guitar price is predicted as in the range of " + str(min_value) + "$ - " + str(max_value) + "$ :guitar:"
-    st.write(prediction_result)
+    min_value = round(100 * predicted_price / 114)
+    max_value = round(100 * predicted_price / 86)
 
-
+    st.write(":guitar: Guitar price is predicted as in the range of",str(min_value),"\$ -",str(max_value),"\$ :guitar:")
 
