@@ -4,9 +4,8 @@ on:
   push:
     branches: 
       - main
-      - 'application/**'
-  pull_request:
-    branches: [ main ]
+    paths:
+      - application/**
     
 #set environment variables 
 env:
