@@ -4,7 +4,7 @@ on:
   push:
     branches: 
       - main
-      - 'application/*'
+      - 'application/**'
   pull_request:
     branches: [ main ]
     
