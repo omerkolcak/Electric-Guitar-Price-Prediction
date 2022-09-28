@@ -19,5 +19,7 @@ After that, I analyzed the data more detailed on 5 different category as general
 ### General Information
 ![alt text for screen readers](images/price-dist-by-brand-country.png "Price Distribution by Brand and Country")
 We can conclude a lot of information by looking at the price distribution by brands. For example, it supports the information that ESP produces expensive custom guitars and ESP LTD produces more affordable guitars. Harley Benton produces cheaper guitars, or Ibanez produces for all different price segments in the range 200$-2800$. These kind of information can be interpreted. By looking at the price distribution by countries, It is obvious that United States and Japan produces cheaper guitars compared to other countries.
+Correlation matrix shows that brand and country origin are highy correlated with price, and production year somewhat correlated.
+![alt text for screen readers](images/correlation.png "Price Distribution by Brand and Country")
 ## Model Building
 ## Application
