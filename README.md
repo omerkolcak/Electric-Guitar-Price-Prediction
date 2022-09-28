@@ -6,6 +6,7 @@ I am plannig to buy a electric guitar in the future, but I do not know what are 
   * Mean Squared Error: 187.6$
   * Mean Absolute Error: 134.5$
   * Mean Absolute Percentage Error: 14% (Maybe this one is a better indicator, since the errors for 2000$ electric guitar and 500$ will be different.)
+  * R^2 Score: 0.89 (which means the algorithm able to explain 89% of the variation)
 * Lastly, I productionarize the model with Streamlit library on heroku, so that anyone can enter the site before searching on the internet for electric guitars, and get some general idea about the price for the features that s/he wants. Web site is hosted on https://electric-guitar-price-pred.herokuapp.com/.
 ## Web Scraping
 I scraped about 1600 guitars and from https://findmyguitar.com/. The website includes various features like, the type of woods that are used to construct the guitar, country of origin, brand, hardware featrues like; pickups, tuners, switches etc.
@@ -14,7 +15,8 @@ There were some outliers on the dataset in terms of guitar price. They are remov
 ## Exploratory Data Analysis
 First, I look at the general informaiton that comes to my mind like price distribution, count of woods that is used to construct the electric guitars. 
 ![alt text for screen readers](images/price-dist.png "Price Distribution and Wood Counts")
-It looks like most poppular woods are <b>Mahogany</b> for body, <b>Maple</b> for neck, and <b>Ebony</b> for fretboard. </br> </br>
+It looks like most poppular woods are <b>Mahogany</b> for body, <b>Maple</b> for neck, and <b>Ebony</b> for fretboard. </br> 
+</br>
 After that, I analyzed the data more detailed on 5 different category as general product information(country of origin, brand etc.), body part of electric guitars, fretboard, neck part, and lastly hardware/electronics.  
 ### General Information
 ![alt text for screen readers](images/price-dist-by-brand-country.png "Price Distribution by Brand and Country")
@@ -28,4 +30,6 @@ Correlation matrix shows that brand and country origin are highy correlated with
 Having pickups from top pickup brands and having locking tuners increases the price of an electric guitar, it can be seen from the both price distribution and correlation matrix. Also, there are additional features for hardware that are related with the price, but switch and knob type does not effect the price that much.
 ![alt text for screen readers](images/hardware.png "Hardware")
 ## Model Building
+I trained the different ML algorithms like linear regression, decision tree, random forest, adaboost, and gradient boosting. Linear regression, decision tree, and adaboost performed poorly compared to random forest and gradient boosting. Also, I tried stacking approach, and it performed better than both random fores and gradient boosting. Structure of stacking algorithm and performance metrics can bee seen on the below figure.
+![alt text for screen readers](images/hardware.png "Model Performance")
 ## Application
