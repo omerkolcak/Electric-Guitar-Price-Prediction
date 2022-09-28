@@ -18,8 +18,14 @@ It looks like most poppular woods are <b>Mahogany</b> for body, <b>Maple</b> for
 After that, I analyzed the data more detailed on 5 different category as general product information(country of origin, brand etc.), body part of electric guitars, fretboard, neck part, and lastly hardware/electronics.  
 ### General Information
 ![alt text for screen readers](images/price-dist-by-brand-country.png "Price Distribution by Brand and Country")
-We can conclude a lot of information by looking at the price distribution by brands. For example, it supports the information that ESP produces expensive custom guitars and ESP LTD produces more affordable guitars. Harley Benton produces cheaper guitars, or Ibanez produces for all different price segments in the range 200$-2800$. These kind of information can be interpreted. By looking at the price distribution by countries, It is obvious that United States and Japan produces cheaper guitars compared to other countries. </br>
+We can conclude a lot of information by looking at the price distribution by brands. For example, it supports the information that ESP produces expensive custom guitars and ESP LTD produces more affordable guitars. Harley Benton produces cheaper guitars, or Ibanez produces for all different price segments in the range 200$-2800$. These kind of information can be interpreted. By looking at the price distribution by countries, It is obvious that United States and Japan produces cheaper guitars compared to other countries. </br> /br>
 Correlation matrix shows that brand and country origin are highy correlated with price, and production year somewhat correlated.
 ![alt text for screen readers](images/correlation.png "Price Distribution by Brand and Country")
+### Body Part
+### Fretboard Part
+### Neck Part
+### Hardware/Electronics
+Having pickups from top pickup brands and having locking tuners increases the price of an electric guitar, it can be seen from the both price distribution and correlation matrix. Also, there are additional features for hardware that are related with the price, but switch and knob type does not effect the price that much.
+![alt text for screen readers](images/hardware.png "Hardware")
 ## Model Building
 ## Application
