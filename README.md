@@ -17,6 +17,8 @@ First, I look at the general informaiton that comes to my mind like price distri
   <img align="top" src="/images/price-dist.png"/ height=500 width="500">
   <img align="top" src="/images/wood-counts.png" height=300 width="500">
 </p>
+![alt text for screen readers](images/price-dist.png "Price Distribution")
+![alt text for screen readers](images/wood-counts.png "Wood Counts")
 I analyzed the data on 5 different category as general product information(country of origin, brand etc.), body part of electric guitars, fretboard, neck part, and lastly hardware/electronics.  
 ### General Information for Products
 ## Model Building
