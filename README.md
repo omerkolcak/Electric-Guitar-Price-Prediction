@@ -24,8 +24,15 @@ We can conclude a lot of information by looking at the price distribution by bra
 Correlation matrix shows that brand and country origin are highy correlated with price, and production year somewhat correlated.
 ![alt text for screen readers](images/correlation.png "Price Distribution by Brand and Country")
 ### Body Part
+![alt text for screen readers](images/body-material.png "Body Part")
+Body material and body shape are important predicators for the price of an electric guitar. Altough I think number of strings may have an impact on price, there are no correlation between the two.   
 ### Fretboard Part
+![alt text for screen readers](images/fretboard.png "Fretboard Part")
+Fretboard material and its radius have significant relation with the price. Like nubmer of strings, number of frets has no siginificant relation with the price. 
 ### Neck Part
+![alt text for screen readers](images/neck-corr.png "Neck Part")
+Unlike freboard material and body material, neck material has not that much effect on the price. Also, we can see this on the below figure. Maple and mahogany woods are more than 90% of the neck woods and their distribution looks very similar. Neck shape has more effect than the material.
+![alt text for screen readers](images/neck-material-shape.png "Neck Material and Shape")
 ### Hardware/Electronics
 Having pickups from top pickup brands and having locking tuners increases the price of an electric guitar, it can be seen from the both price distribution and correlation matrix. Also, there are additional features for hardware that are related with the price, but switch and knob type does not effect the price that much.
 ![alt text for screen readers](images/hardware.png "Hardware")
