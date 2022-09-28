@@ -31,7 +31,7 @@ Body material and body shape are important predicators for the price of an elect
 Fretboard material and its radius have significant relation with the price. Like nubmer of strings, number of frets has no siginificant relation with the price. 
 ### Neck Part
 <img align="left" src="images/neck-corr.png">
-Unlike freboard material and body material, neck material has not that much effect on the price. Also, we can see this on the below figure. Maple and mahogany woods are more than 90% of the neck woods and their distribution looks very similar. Neck shape has more effect than the material. </br>
+Unlike freboard material and body material, neck material has not that much effect on the price. Also, we can see this on the below figure. Maple and mahogany woods are more than 90% of the neck woods and their distribution looks very similar. Neck shape has more effect than the material. <br clear="left"/>
 ![alt text for screen readers](images/neck-material-shape.png "Neck Material and Shape")
 ### Hardware/Electronics
 Having pickups from top pickup brands and having locking tuners increases the price of an electric guitar, it can be seen from the both price distribution and correlation matrix. Also, there are additional features for hardware that are related with the price, but switch and knob type does not effect the price that much.
