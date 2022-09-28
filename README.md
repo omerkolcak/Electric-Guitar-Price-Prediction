@@ -14,8 +14,9 @@ There were some outliers on the dataset in terms of guitar price. They are remov
 ## Exploratory Data Analysis
 First, I look at the general informaiton that comes to my mind like price distribution, count of woods that is used to construct the electric guitars. 
 ![alt text for screen readers](images/price-dist.png "Price Distribution and Wood Counts")
-It looks like most poppular woods are <b>Mahogany</b> for body, <b>Maple</b> for neck, and <b>Ebony</b> for fretboard. </br>
+It looks like most poppular woods are <b>Mahogany</b> for body, <b>Maple</b> for neck, and <b>Ebony</b> for fretboard. </br> </br>
 After that, I analyzed the data more detailed on 5 different category as general product information(country of origin, brand etc.), body part of electric guitars, fretboard, neck part, and lastly hardware/electronics.  
-### General Information for Products
+### General Information
+We can conclude a lot of information by looking at the price distribution by brands. For example, it supports the information that ESP produces expensive custom guitars and ESP LTD produces more affordable guitars. Harley Benton produces cheaper guitars, or Ibanez produces for all different price segments in the range 200$-2800$. These kind of information can be interpreted. By looking at the price distribution by countries, It is obvious that United States and Japan produces cheaper guitars compared to other countries.
 ## Model Building
 ## Application
