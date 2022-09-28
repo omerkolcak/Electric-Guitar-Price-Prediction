@@ -13,12 +13,9 @@ I scraped about 1600 guitars and from https://findmyguitar.com/. The website inc
 There were some outliers on the dataset in terms of guitar price. They are removed from the dataset. I filled NaN value for some of the Bridg Type values by Bridge name. I extracted the pick ups power from pick up models. For example; a guitar with the <b>Lundgren M6 (Humbucker / Passive)</b> bridge pickup and <b>Sustainiac (Humbucker / Passive)</b> neck pickup, will have the Passive-Passive combination. Passive pickups crate weaker electric signals. Maybe, someone give extra attention to number of frets that the electirc guitar has, so that I extracted number of frets from the frets column.   
 ## Exploratory Data Analysis
 First, I look at the general informaiton that comes to my mind like price distribution, count of woods that is used to construct the electric guitars. 
-<p float="left">
-  <img align="top" src="/images/price-dist.png"/ height=500 width="500">
-  <img align="top" src="/images/wood-counts.png" height=300 width="500">
-</p>
 ![alt text for screen readers](images/price-dist.png "Price Distribution")
 ![alt text for screen readers](images/wood-counts.png "Wood Counts")
+
 I analyzed the data on 5 different category as general product information(country of origin, brand etc.), body part of electric guitars, fretboard, neck part, and lastly hardware/electronics.  
 ### General Information for Products
 ## Model Building
