@@ -30,7 +30,7 @@ Body material and body shape are important predicators for the price of an elect
 ![alt text for screen readers](images/fretboard.png "Fretboard Part")
 Fretboard material and its radius have significant relation with the price. Like nubmer of strings, number of frets has no siginificant relation with the price. 
 ### Neck Part
-![alt text for screen readers](images/neck-corr.png "Neck Part") </br>
+<img align="left" src="images/neck-corr.png">
 Unlike freboard material and body material, neck material has not that much effect on the price. Also, we can see this on the below figure. Maple and mahogany woods are more than 90% of the neck woods and their distribution looks very similar. Neck shape has more effect than the material.
 ![alt text for screen readers](images/neck-material-shape.png "Neck Material and Shape")
 ### Hardware/Electronics
