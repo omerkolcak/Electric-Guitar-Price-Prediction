@@ -31,7 +31,7 @@ Having pickups from top pickup brands and having locking tuners increases the pr
 ![alt text for screen readers](images/hardware.png "Hardware")
 ## Model Building
 I trained the different ML algorithms like linear regression, decision tree, random forest, adaboost, and gradient boosting. Linear regression, decision tree, and adaboost performed poorly compared to random forest and gradient boosting. Also, I tried stacking approach, and it performed better than both random fores and gradient boosting. Structure of stacking algorithm and performance metrics can bee seen on the below figure.
-![alt text for screen readers](images/hardware.png "Model Performance")
+![alt text for screen readers](images/model-performance.png "Model Performance")
 ## Application
 I built an application by using Streamlit library. I containerize the application using Docker and deploy it to the Heroku. I created a CI/CD pipelines by using Github Actions. "main.yaml" file for the deploymenet pipeline can be found on .github/workflows folder. </br>
 I wanted to serve this application publicly, because anyone can use it, and get a rough price estimation before searching electric guitars on the internet. Web site is hosted on the https://electric-guitar-price-pred.herokuapp.com/.  
