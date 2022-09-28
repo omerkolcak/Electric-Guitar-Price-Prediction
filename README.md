@@ -1,11 +1,11 @@
 # Electric-Guitar-Price-Prediction: Project Overview
-I am plannig to buy a electric guitar in the future, but I do not know what are things I should consider. Therefore, I decided to make some data analysis to understand the what are the important features of an electric guitar that impact the cost, and train a machine learning model to predict the cost of an electric guitar. In order to tackle this problem I performed the following steps:
+I am plannig to buy a electric guitar in the future, but I do not know what are the features of an electric guitar I should consider the most. Therefore, I decided to make some data analysis to understand what are the important features of an electric guitar that impact the cost, and train a machine learning algorithm to predict the cost of an electric guitar. In order to tackle this problem I performed the following steps:
 * I searched the Internet to find a good dataset, but I could not find. So that, I scraped the https://findmyguitar.com/ and collect approximately 1600 electric guitars.
 * I performed some data analysis to gain insights from the data.
 * I trained various machine learning algorithms to get the best performance. Performance metrics for the best one:
   * Mean Squared Error: 187.6$
   * Mean Absolute Error: 134.5$
-  * Mean Absolute Percentage Error: 14% (Maybe this one is a better indicator, since the errors for 2000$ electric guitar and 500$ will be different.)
+  * Mean Absolute Percentage Error: 14.5% (Maybe this one is a better indicator, since the errors for 2000$ electric guitar and 500$ will differ.)
   * R^2 Score: 0.89 (which means the algorithm able to explain 89% of the variation)
 * Lastly, I productionarize the model with Streamlit library on heroku, so that anyone can enter the site before searching on the internet for electric guitars, and get some general idea about the price for the features that s/he wants. Web site is hosted on https://electric-guitar-price-pred.herokuapp.com/.
 ## Web Scraping
@@ -33,3 +33,5 @@ Having pickups from top pickup brands and having locking tuners increases the pr
 I trained the different ML algorithms like linear regression, decision tree, random forest, adaboost, and gradient boosting. Linear regression, decision tree, and adaboost performed poorly compared to random forest and gradient boosting. Also, I tried stacking approach, and it performed better than both random fores and gradient boosting. Structure of stacking algorithm and performance metrics can bee seen on the below figure.
 ![alt text for screen readers](images/hardware.png "Model Performance")
 ## Application
+I built an application by using Streamlit library. I containerize the application using Docker and deploy it to the Heroku. I created a CI/CD pipelines by using Github Actions. "main.yaml" file for the deploymenet pipeline can be found on .github/workflows folder. </br>
+I wanted to serve this application publicly, because anyone can use it, and get a rough price estimation before searching electric guitars on the internet. Web site is hosted on the https://electric-guitar-price-pred.herokuapp.com/.  
