@@ -20,7 +20,7 @@ It looks like most poppular woods are <b>Mahogany</b> for body, <b>Maple</b> for
 After that, I analyzed the data more detailed on 5 different category as general product information(country of origin, brand etc.), body part of electric guitars, fretboard, neck part, and lastly hardware/electronics.  
 ### General Information
 ![alt text for screen readers](images/price-dist-by-brand-country.png "Price Distribution by Brand and Country")
-We can conclude a lot of information by looking at the price distribution by brands. For example, it supports the information that ESP produces expensive custom guitars and ESP LTD produces more affordable guitars. Harley Benton produces cheaper guitars, or Ibanez produces for all different price segments in the range 200$-2800$. These kind of information can be interpreted. By looking at the price distribution by countries, It is obvious that United States and Japan produces cheaper guitars compared to other countries. </br> /br>
+We can conclude a lot of information by looking at the price distribution by brands. For example, it supports the information that ESP produces expensive custom guitars and ESP LTD produces more affordable guitars. Harley Benton produces cheaper guitars, or Ibanez produces for all different price segments in the range 200$-2800$. These kind of information can be interpreted. By looking at the price distribution by countries, It is obvious that United States and Japan produces cheaper guitars compared to other countries. </br> </br>
 Correlation matrix shows that brand and country origin are highy correlated with price, and production year somewhat correlated.
 ![alt text for screen readers](images/correlation.png "Price Distribution by Brand and Country")
 ### Body Part
@@ -30,7 +30,7 @@ Body material and body shape are important predicators for the price of an elect
 ![alt text for screen readers](images/fretboard.png "Fretboard Part")
 Fretboard material and its radius have significant relation with the price. Like nubmer of strings, number of frets has no siginificant relation with the price. 
 ### Neck Part
-![alt text for screen readers](images/neck-corr.png "Neck Part")
+![alt text for screen readers](images/neck-corr.png "Neck Part") </br>
 Unlike freboard material and body material, neck material has not that much effect on the price. Also, we can see this on the below figure. Maple and mahogany woods are more than 90% of the neck woods and their distribution looks very similar. Neck shape has more effect than the material.
 ![alt text for screen readers](images/neck-material-shape.png "Neck Material and Shape")
 ### Hardware/Electronics
